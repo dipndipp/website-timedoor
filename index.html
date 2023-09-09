@@ -1,0 +1,207 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cobee the coder</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/
+f90068558c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img
+          class="header-icon"
+          src="https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/8/4/2edd5ac4-3127-4bb8-9c20-0e1809984289.jpg"
+          alt=""
+        />
+        <h3 class="title"><a href="index.html">Cobee The Coder</a></h3>
+        <nav>
+          <a href="project.html">Project</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="jumbotron">
+        <div class="jumbotron">
+          <h1
+            onmousedown="changeTitleBack(this)"
+            onmouseover="changeTitle(this)"
+            class="jumbotron-title"
+          >
+            Dapatkan tips Programming disini
+          </h1>
+          <div class="header-flex">
+            <div>
+              <h2 class="jumbotron-text">
+                Baru di dunia Programming? <br />
+                Let's Start with Creating Simple
+                <span style="color: #f4a261">Game and Website!</span>
+              </h2>
+              <div class="mini-text-flex">
+                <p class="mini-text">Learn Basic Programming here</p>
+                <button id="icon-up" onclick="changeText()">
+                  <i class="far fa-hand-point-up"></i>
+                </button>
+                <button id="icon-down" class="icon-down">
+                  <i class="far fa-hand-point-down" onclick="changeText()"></i>
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                onmouseover="changeImage(this)"
+                onmouseout="changeImageBack(this)"
+                class="jumbotron-img"
+                src="https://i0.wp.com/timedooracademy.com/wp-content/uploads/2022/10/Kelapa-Gading.jpeg"
+                alt="gambar"
+                width="auto"
+                height="300"
+                style="border-radius: 10px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------ Meeting 10 ----------------------- -->
+      <div class="main-content">
+        <aside>
+          <div class="profile">
+            <h3 class="aside-title">It's me</h3>
+            <img
+              class="profile-picture"
+              src="assets/download (2).jpg"
+              alt="Cobee"
+              width="150px"
+              height="auto"
+            />
+            <!-- ------------------------ Meeting 11----------------------- -->
+            <div class="toggle">
+              <button ondblclick="lek()" class="btn" id="green">
+                <i class="fa fa-thumbs-up fa-lg"></i>
+              </button>
+              <button ondblclick="dislek()" class="btn" id="red">
+                <i class="fa fa-thumbs-down fa-lg"></i>
+              </button>
+            </div>
+            <div class="search-tags-container">
+              <div class="input-tag">
+                <h3 class="aside-title">Search Here</h3>
+                <input id="myInput" type="text" placeholder="Search..." />
+                <span class="addBtn" onclick="newElement()"> Search</span>
+              </div>
+              <ul id="myUL" class="search-tags-list">
+                <li class="search-tags-item">HTML</li>
+                <li class="search-tags-item">Code</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+        <div class="content">
+          <article id="my-project">
+            <h3 class="article-title">My Project</h3>
+            <div class="project-container">
+              <div class="project">
+                <img
+                  src="assets/download (2).jpg"
+                  alt=""
+                  width="300px"
+                  height="210px"
+                />
+                <h4 class="project-title">Dessert Rally</h4>
+                <p class="project-description">
+                  Game dessert rally menggunakan platform scratch
+                </p>
+              </div>
+              <div class="project">
+                <img
+                  src="assets/download (2).jpg"
+                  alt=""
+                  width="300px"
+                  height="210px"
+                />
+                <h4 class="project-title">Memory Game</h4>
+                <p class="project-description">
+                  Game memory Game menggunakan platform scratch
+                </p>
+              </div>
+            </div>
+          </article>
+          <!-- ------------------------ Meeting 11----------------------- -->
+          <article id="video">
+            <div class="item-video">
+              <h3 class="article-title">What is Coding?</h3>
+              <iframe
+                class="video-content"
+                width="700px"
+                height="400px"
+                src="https://www.youtube.com/embed/AtUmo6wtjLQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+
+              <h3 class="article-title">Coding is Not Difficult !</h3>
+              <iframe
+                class="video-content"
+                width="700px"
+                height="400px"
+                src="https://www.youtube.com/embed/hb7Q33ysCwI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </article>
+
+          <article id="maps">
+            <div class="maps">
+              <h3 class="article-title">Location</h3>
+              <div class="location">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.341744003087!2d106.80005977461816!3d-6.218585860906432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f16b11f44677%3A0xe0b6ad924afd76f0!2sGelora%20Bung%20Karno%20Complex!5e0!3m2!1sen!2sid!4v1691808160565!5m2!1sen!2sid"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <div class="maps-text">
+                  <!-- <h3>Timedoor Coding Academy</h3>
+                                <p>Timedoor Coding Academy adalah bagian dari PT Timedoor Indonesia, <br>
+                                tempat penulis belajar konsep programming sehingga bisa membuat Blog ini.</p> -->
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <!-- ------------------------ Meeting 10 ----------------------- -->
+    <footer>
+      <div class="main-footer">
+        <h3 class="info-top">ngakak cik</h3>
+        <div class="social-media">
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fas fa-envelope"></i>
+        </div>
+        <p class="info-center">
+          Copyright &copy; 2023. Nadhif. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
