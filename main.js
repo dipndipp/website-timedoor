@@ -119,3 +119,71 @@ function newElement() {
     };
   }
 }
+// Slider
+var slides = document.querySelectorAll(".slide");
+var buttons = document.querySelectorAll(".slider-btn");
+// console.log(buttons)
+let currentSlide = 1;
+
+/* ---------------------------------- Manual Image Slider ---------------------------------- */
+var manualNav = function (manual) {
+  /* add/delete class active on every item of array slides and buttons alternately*/
+  slides.forEach(function (slide) {
+    slide.classList.remove("active");
+
+    buttons.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+  });
+
+  slides[manual].classList.add("active");
+  buttons[manual].classList.add("active");
+};
+
+// Call function to set event when class active is clicked
+buttons.forEach(function (btn, i) {
+  btn.addEventListener("click", function () {
+    manualNav(i);
+    currentSlide = i;
+  });
+});
+var repeat = function () {
+  let active = document.getElementsByClassName("active");
+  let i = 1;
+
+  var repeater = function () {
+    //same as manualNav function, to add/delete class active alternately
+    //but it has different condition to run, which is every 5s
+    setTimeout(function () {
+      [...active].forEach(function (activeSlide) {
+        activeSlide.classList.remove("active");
+      });
+
+      slides[i].classList.add("active");
+      buttons[i].classList.add("active");
+      i++;
+
+      // console.log(i);
+      if (slides.length == i) {
+        i = 0;
+      }
+      if (i >= slides.length) {
+        return;
+      }
+      repeater();
+    }, 5000);
+  };
+  repeater();
+};
+repeat();
+
+//modal
+var btnSubmit = document.querySelector(".submit");
+var modal = document.querySelector(".modal-container");
+if (btnSubmit) {
+  btnSubmit.addEventListener("click", function () {
+    modal.classList.add("show");
+    const next = document.querySelector(".next");
+    next.setAttribute("value", "https://timed00rwebs.netlify.app/contact.html");
+  });
+}

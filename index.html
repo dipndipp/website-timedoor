@@ -9,6 +9,7 @@
 f90068558c.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -39,7 +40,11 @@ f90068558c.js"
           </h1>
           <div class="header-flex">
             <div>
-              <h2 class="jumbotron-text">
+              <h2
+                class="jumbotron-text"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              >
                 Baru di dunia Programming? <br />
                 Let's Start with Creating Simple
                 <span style="color: #f4a261">Game and Website!</span>
@@ -69,10 +74,64 @@ f90068558c.js"
           </div>
         </div>
       </section>
+
+      <!-- Slider -->
+      <section id="slider" class="section-slider">
+        <div class="image-slider">
+          <div class="slide active">
+            <img src="assets/game-development.jpg" alt="" />
+            <div class="slide-text">
+              <h2>game-development</h2>
+              <p>Instead of playing games why u create your own</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="assets/web-design.jpg" alt="" />
+            <div class="slide-text">
+              <h2>web-development</h2>
+              <p>bikin web</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="assets/web-design.jpg" alt="" />
+            <div class="slide-text">
+              <h2>web design</h2>
+              <p>design web</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="assets/web-design.jpg" alt="" />
+            <div class="slide-text">
+              <h2>web design</h2>
+              <p>design web</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="assets/game-development.jpg" alt="" />
+            <div class="slide-text">
+              <h2>game-development</h2>
+              <p>Instead of playing games why u create your own</p>
+            </div>
+          </div>
+
+          <div class="navigation">
+            <div class="slider-btn active"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+          </div>
+        </div>
+      </section>
+
       <!-- ------------------------ Meeting 10 ----------------------- -->
       <div class="main-content">
         <aside>
-          <div class="profile">
+          <div class="profile" data-aos="fade-right" data-aos-duration="40000">
             <h3 class="aside-title">It's me</h3>
             <img
               class="profile-picture"
@@ -108,7 +167,7 @@ f90068558c.js"
           <article id="my-project">
             <h3 class="article-title">My Project</h3>
             <div class="project-container">
-              <div class="project">
+              <div class="project" data-aos="fade-left" data-aos-delay="300">
                 <img
                   src="assets/download (2).jpg"
                   alt=""
@@ -120,7 +179,7 @@ f90068558c.js"
                   Game dessert rally menggunakan platform scratch
                 </p>
               </div>
-              <div class="project">
+              <div class="project" data-aos="fade-left" data-aos-delay="500">
                 <img
                   src="assets/download (2).jpg"
                   alt=""
@@ -139,6 +198,8 @@ f90068558c.js"
             <div class="item-video">
               <h3 class="article-title">What is Coding?</h3>
               <iframe
+                data-aos="fade-left"
+                data-aos-delay="300"
                 class="video-content"
                 width="700px"
                 height="400px"
@@ -151,6 +212,8 @@ f90068558c.js"
 
               <h3 class="article-title">Coding is Not Difficult !</h3>
               <iframe
+                data-aos="fade-left"
+                data-aos-delay="500"
                 class="video-content"
                 width="700px"
                 height="400px"
@@ -168,6 +231,8 @@ f90068558c.js"
               <h3 class="article-title">Location</h3>
               <div class="location">
                 <iframe
+                  data-aos="fade-right"
+                  data-aos-delay="500"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.341744003087!2d106.80005977461816!3d-6.218585860906432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f16b11f44677%3A0xe0b6ad924afd76f0!2sGelora%20Bung%20Karno%20Complex!5e0!3m2!1sen!2sid!4v1691808160565!5m2!1sen!2sid"
                   width="600"
                   height="450"
@@ -204,4 +269,8 @@ f90068558c.js"
     </footer>
   </body>
   <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
